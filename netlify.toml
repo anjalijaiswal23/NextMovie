@@ -1,0 +1,18 @@
+# Netlify configuration for Next.js App Router
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[dev]
+  command = "npm run dev"
+  port = 3000
+
+[functions]
+  directory = "netlify/functions"
+
+[environment]
+  OMDB_API_KEY = "your_api_key_here" # Set this in Netlify dashboard for production
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+npm run build
