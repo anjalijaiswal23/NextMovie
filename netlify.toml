@@ -15,4 +15,3 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-npm run build
